@@ -1,1 +1,6 @@
-Hello moon2l
+tornado错误页面处理
+
+def write_error(self, status_code, **kwargs):
+    self.redirect("/")
+
+tornado.web.RequestHandler.write_error = write_error
